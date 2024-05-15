@@ -1,54 +1,83 @@
-.container {
+.form {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 30px;
+    width: 450px;
+    border-radius: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.form-container {
-    width: 400px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-}
-
-.form-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.form-input {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-.form-input:focus {
-    outline: none;
-    border-color: #4a90e2;
-}
-
-.form-error {
-    color: #f00;
-    font-size: 14px;
-}
-
-.form-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4a90e2;
-    color: #fff;
+.form button {
+    margin-top: 20px; /* Add some top margin to separate it from the input fields */
+    background-color: #151717;
     border: none;
-    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    height: 50px;
+    width: 100%; /* Make the button full width */
     cursor: pointer;
+    transition: background-color 0.3s; /* Add transition effect */
 }
 
-.form-button:hover {
-    background-color: #357ae8;
+.form button:hover {
+    background-color: #FA3737; /* Change background color on hover */
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputGroup > label {
+    color: #151717;
+    font-weight: 600;
+}
+
+.inputForm {
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.input {
+    margin-left: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 85%;
+    height: 100%;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+}
+
+.input:focus {
+    outline: none;
+    border: 0;
+}
+
+.inputForm:focus-within {
+    border: 1.5px solid #2d79f3;
+}
+
+.message{
+    font-size: 20px;
+}
+    .signin {
+    text-align: center;
+    font-size: 12px;
+}
+
+.signin a {
+    color: #FA3737;
+}
+
+.signin a:hover {
+    text-decoration: underline;
 }
